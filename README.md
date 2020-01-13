@@ -1,44 +1,29 @@
-<h1 align="center" style="text-align:center">I18n Issue Tracker</h1>
+![Next.js Logo](../packages/frameworks/logos/next.svg)
 
-### Getting Started
+# Next.js Example
 
-##### 1. Clone the repo to your local PC and go to the installation
+This directory is a brief example of a [Next.js](https://nextjs.org) app that can be deployed with ZEIT Now and zero configuration.
 
-```bash
-git clone repo folder && cd folder
+## Deploy Your Own
+
+Deploy your own Next.js project with ZEIT Now.
+
+[![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/new/project?template=https://github.com/zeit/now/tree/master/examples/nextjs)
+
+_Live Example: https://nextjs.now-examples.now.sh_
+
+### How We Created This Example
+
+To get started with Next.js deployed with ZEIT Now, you can use [npm create](https://www.npmjs.com/package/create-next-app) to initialize the project:
+
+```shell
+$ npm create next-app my-app
 ```
 
-##### 2. Install the dependencies
+### Deploying From Your Terminal
 
-```bash
-npm install
+You can deploy your new Next.js project with a single command from your terminal using [Now CLI](https://zeit.co/download):
+
+```shell
+$ now
 ```
-
-##### 2. Start the demo project
-
-```bash
-npm start
-```
-
-### Material UI
-
-Visit [Material UI](https://material-ui.com/) for more details & documentation on Material UI
-
-### ReactPWA
-
-ReactPWA is a highly scalable, Progressive Web Application foundation, boilerplate, with the best Developer Experience built on top of PawJS
-Visit [ReactPWA](https://www.reactpwa.com) for more configuration & documentation.
-
-### Backers
-
-Thank you to all our backers! 🙏 [[Become a backer]()]
-
-### Sponsors
-
-Support this project by becoming a sponsor. Your logo will show up here with a link to your website. [[Become a sponsor]()]
-
-### Supporters
-
-### License
-
-This project is licensed under the MIT license, Copyright (c) 2018. For more information see [LICENSE.md]().
