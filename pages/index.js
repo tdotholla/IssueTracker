@@ -6,16 +6,16 @@ import SimpleChart from "../components/SimpleChart";
 import SimpleTable from "../components/SimpleTable";
 
 const Home = () => {
-  const [date, setDate] = useState(null);
+//   const [date, setDate] = useState(null);
 
-  useEffect(() => {
-    async function getDate() {
-      const res = await fetch("/api/date");
-      const newDate = await res.json();
-      setDate(newDate);
-    }
-    getDate();
-  }, []);
+//   useEffect(() => {
+//     async function getDate() {
+//       const res = await fetch("/api/date");
+//       const newDate = await res.json();
+//       setDate(newDate);
+//     }
+//     getDate();
+//   }, []);
 
   return (
     <div>
