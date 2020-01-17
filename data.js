@@ -8,7 +8,7 @@ export const data = [
   { date: "01/09/2020", total: 598, fixed: 106, get remaining() {
     return this.total - this.fixed
   } },
-  { date: "01/15/2020", total: 1246, fixed: 106, get remaining() {
+  { date: "01/15/2020", total: 1321, fixed: 118, get remaining() {
     return this.total - this.fixed
   } }
 ];
