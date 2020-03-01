@@ -8,7 +8,6 @@ import CartesianGrid from "recharts/lib/cartesian/CartesianGrid";
 import Tooltip from "recharts/lib/component/Tooltip";
 import Legend from "recharts/lib/component/Legend";
 import { data } from "../data";
-
 function SimpleChart() {
   return (
     // 99% per https://github.com/recharts/recharts/issues/172
@@ -19,9 +18,9 @@ function SimpleChart() {
         <Tooltip />
         <Legend />
         <CartesianGrid vertical={false} strokeDasharray="3 3" />
-        <Area type="basis" dataKey="total" />
-        <Area type="basis" dataKey="remaining" />
-        <Bar dataKey="fixed" barSize={20} />
+        <Area type="basis" dataKey="tagsTotal" />
+        <Area type="basis" dataKey="tagsRemaining" />
+        <Bar dataKey="tagsFixed" barSize={20} />
       </ComposedChart>
     </ResponsiveContainer>
   );

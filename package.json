@@ -1,9 +1,9 @@
 {
-  "name": "create-next-example-app",
-  "description": "A Next.js starter app.",
+  "name": "I18nDashboards",
+  "description": "Tracking i18n issues of CS. Visit dashboard.kielbyrne.com",
   "repository": {
     "type": "git",
-    "url": "https://github.com/zeit/now/tree/master/examples/nextjs"
+    "url": "https://github.com/tdotholla/IssueTracker"
   },
   "license": "MIT",
   "scripts": {
@@ -16,6 +16,11 @@
     "next": "^9.1.6",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+    "react-hook-form": "^4.10.1",
     "recharts": "^2.0.0-beta.1"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "node-fetch": "^2.6.0"
   }
 }

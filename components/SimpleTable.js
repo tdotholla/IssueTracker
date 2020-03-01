@@ -8,7 +8,7 @@ import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
 import Paper from "@material-ui/core/Paper";
 import { data } from "../data";
-console.log(data);
+import RowForm from "./RowForm";
 const styles = {
   root: {
     width: "100%",
@@ -28,26 +28,25 @@ function SimpleTable(props) {
         <TableHead>
           <TableRow>
             <TableCell>Date</TableCell>
-            <TableCell numeric>Total (comments)</TableCell>
-            <TableCell numeric>Fixed</TableCell>
-            <TableCell numeric>Remaining</TableCell>
+            <TableCell>Total (comments)</TableCell>
+            <TableCell>Fixed</TableCell>
+            <TableCell>Remaining</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
           {data.map(n => {
             return (
               <TableRow key={n.date}>
-                <TableCell component="th" scope="row">
-                  {n.date}
-                </TableCell>
-                <TableCell numeric>{n.total}</TableCell>
-                <TableCell numeric>{n.fixed}</TableCell>
-                <TableCell numeric>{n.remaining}</TableCell>
+                <TableCell>{n.date}</TableCell>
+                <TableCell>{n.tagsTotal}</TableCell>
+                <TableCell>{n.tagsFixed}</TableCell>
+                <TableCell>{n.tagsRemaining}</TableCell>
               </TableRow>
             );
           })}
         </TableBody>
       </Table>
+      <RowForm />
     </Paper>
   );
 }
